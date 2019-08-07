@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorUiBackgroud"
+    android:orientation="vertical"
+    tools:ignore="ContentDescription">
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/vw_comm_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="46dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/id_withdraw_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textColor="#FD4A41"
+            android:textSize="32dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="@string/withdraw_max_can"
+            android:textColor="@color/colorTopPanelText"
+            android:textSize="14dp" />
+
+        <com.sina.shopguide.view.TopPanelTipView
+            android:id="@+id/id_aliaccount"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            app:content="@string/withdraw_aliaccount" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorLine" />
+
+        <com.sina.shopguide.view.HorizTextEditView
+            android:id="@+id/id_curr_num"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            app:dcontent="@string/withdraw_curr"
+            app:dcontentcolor="@color/colorTopPanelText"
+            app:dtip="@string/withdraw_tip" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorLine" />
+
+        <TextView
+            android:id="@+id/id_withdraw_opr"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/bg_text_bigcorner_red"
+            android:gravity="center"
+            android:text="@string/withdraw_opr"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

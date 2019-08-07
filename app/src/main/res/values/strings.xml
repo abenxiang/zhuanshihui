@@ -1,0 +1,174 @@
+<resources>
+    <string name="app_name">赚实惠</string>
+    <string name="main_tab_home">首页</string>
+    <string name="main_tab_zhuanti">专题</string>
+    <string name="main_tab_me">我的</string>
+    <string name="main_tab_me_set">设置</string>
+    <string name="login_or_registe">登录/注册</string>
+    <string name="me_modify_avatar">点击修改头像</string>
+
+    <string name="toppanel_freshguide">新手攻略</string>
+    <string name="toppanel_commproblen">常见问题</string>
+    <string name="toppanel_feedback">意见反馈</string>
+    <string name="toppanel_aboutus">关于我们</string>
+
+    <string name="toppaneltip_nick">昵称</string>
+    <string name="toppaneltip_invatecode">绑定邀请码</string>
+    <string name="toppaneltip_zhifubao">支付宝账号</string>
+    <string name="toppaneltip_mobile">手机号码</string>
+    <string name="toppaneltip_weixin">微信号</string>
+    <string name="toppaneltip_weibo">微博</string>
+    <string name="toppaneltip_qq">QQ</string>
+    <string name="toppaneltip_pid">绑定pid</string>
+    <string name="toppaneltip_setorchange">设置/修改密码</string>
+    <string name="toppaneltip_tip_modify">修改</string>
+    <string name="toppaneltip_tip_invate">绑定他人的邀请码才能赚钱哦</string>
+    <string name="exit">退出登录</string>
+
+    <string name="me_login_candraw_title">可提现金额</string>
+    <string name="me_login_draw">提现</string>
+    <string name="me_login_earn_month">本月预估</string>
+    <string name="me_login_earn_today">今日收益</string>
+    <string name="me_login_earn_group">我的团队</string>
+    <string name="me_login_earn">收益</string>
+    <string name="me_login_group">团队</string>
+    <string name="me_login_invate">邀请</string>
+
+    <string name="invate_bind_titles">邀请码</string>
+    <string name="invate_bind_tip">请输入您要绑定的邀请码</string>
+    <string name="bind_go">立即绑定</string>
+
+    <string name="title_become_parner">成为合伙人</string>
+
+    <string name="aboutus_version">当前版本</string>
+    <string name="aboutus_title">关于我们</string>
+    <string name="aboutus_pinfen">给我评分</string>
+    <string name="aboutus_feedback">意见反馈</string>
+    <string name="aboutus_tip">请输入支付宝认证的真实姓名</string>
+
+    <string name="bindalipay_name">姓名</string>
+    <string name="bindalipay_name_tip">请输入支付宝认证的真实姓名</string>
+    <string name="bindalipay_aliacount">支付宝账号</string>
+    <string name="bindalipay_aliacount_tip">请确认支付宝账号输入正确</string>
+    <string name="bindalipay_mobile">手机号码</string>
+    <string name="bindalipay_mobile_tip">请输入手机号码</string>
+    <string name="bindalipay_smscode">验证码</string>
+    <string name="bindalipay_smscode_tip">请确认验证码</string>
+    <string name="bindalipay_smscode_get">获取验证码</string>
+    <string name="bindalipay_title">绑定支付宝</string>
+
+    <string name="dlg_bindcomfrim_tip">请确认支付宝账号准确无误</string>
+    <string name="dlg_rebindcomfrim_tip">支付宝只能修改一次哦，您确定要修改吗</string>
+    <string name="dlg_cancel">取消</string>
+    <string name="dlg_comfirm">确定</string>
+
+    <string name="withdraw_detail">明细</string>
+    <string name="withdraw_max_can">可提现金额</string>
+    <string name="withdraw_aliaccount">支付宝账号</string>
+    <string name="withdraw_curr">本次提现</string>
+    <string name="withdraw_opr">我要提现</string>
+    <string name="withdraw_tip">请输入本次要提现的金额</string>
+    <string name="withdraw_title">提现</string>
+
+    <string name="profitmanager_title">收益管理</string>
+    <string name="profitmanager_leftmoney">账户余额(元)</string>
+    <string name="profitmanager_allprofit">累计结算收入：</string>
+    <string name="profitmanager_lastmonth">上月结算收入</string>
+    <string name="profitmanager_currmonth">本月预估收入</string>
+    <string name="profitmanager_lastproxy">上月代理贡献收入</string>
+    <string name="profitmanager_today">今日统计</string>
+    <string name="profitmanager_paycount">付款笔数</string>
+    <string name="profitmanager_mayincome">预估收入</string>
+    <string name="profitmanager_proxyincome">代理贡献收入</string>
+    <string name="profitmanager_yesterday">昨日统计</string>
+    <string name="profitmanager_senvenday">近7日统计</string>
+    <string name="profitmanager_detail">结算佣金明细</string>
+    <string name="profitmanager_history">提现记录</string>
+
+    <string name="commission_title">结算佣金明细</string>
+
+    <string name="withdraw_detail_title">提现明细</string>
+    <string name="str_time">时间</string>
+    <string name="str_price">金额</string>
+    <string name="str_source">来源</string>
+
+    <string name="mygroup_title">我的团队</string>
+    <string name="str_a_parner">A级合伙人(0)</string>
+    <string name="str_b_parner">B级合伙人(0)</string>
+    <string name="str_parner_name">成员</string>
+    <string name="str_parner_currprofit">本月贡献</string>
+    <string name="str_parner_lastprofit">B上月贡献</string>
+
+
+    <string name="login_mobile_tip">请输入您的手机号</string>
+    <string name="login_password_tip">请输入密码</string>
+
+    <string name="reg_invate_tip">请输入邀请码</string>
+    <string name="reg_sms_tip">请输入验证码</string>
+
+    <string name="str_login">登录</string>
+    <string name="str_register">注册</string>
+    <string name="str_resetpass">重置密码</string>
+    <string name="str_commit">提交</string>
+    <string name="str_resetpass_tip">新密码（6-30位，区分大小写）</string>
+
+    <string name="str_register_now">立即注册</string>
+    <string name="str_sms_copy">粘贴邀请码</string>
+    <string name="str_copy">复制</string>
+    <string name="str_register_agree">同意</string>
+    <string name="str_register_protcal">《APP用户协议》</string>
+    <string name="str_forgetpassword">没有密码/忘记密码</string>
+    <string name="str_save">保存</string>
+
+    <string name="taobao_price">淘宝价</string>
+    <string name="sales_p_month">月销</string>
+    <string name="coupon">券</string>
+
+    <string name="toast_param_invalide">参数不合法</string>
+    <string name="toast_bindinvate_sucess">绑定邀请码成功</string>
+    <string name="toast_bindinvate_fail">绑定邀请码失败</string>
+    <string name="toast_bindali_sucess">绑定支付宝成功</string>
+    <string name="toast_bindali_fail">绑定支付宝失败</string>
+    <string name="toast_withdraw_sucess">提现成功</string>
+    <string name="toast_already_registed">该手机号码已经注册！</string>
+    <string name="toast_pass_illegle">密码设置不符合要求</string>
+    <string name="toast_mobile_illegle">手机号码不合法</string>
+    <string name="toast_sms_illegle">验证码长度应该为6位</string>
+    <string name="toast_sms_getfailed">获取验证码失败</string>
+    <string name="toast_not_login">您还未登录，暂时不能使用此功能</string>
+    <string name="toast_not_login2">你还没有登录，确定是否要登录么</string>
+    <string name="toast_gologin">去登陆</string>
+
+    <!-- crop image -->
+    <string name="saving_image">保存图片</string>
+    <string name="preparing_card">存储卡准备中</string>
+    <string name="no_storage_card">存储卡不可用</string>
+    <string name="not_enough_space">存储卡空间不足</string>
+
+    <string name="str_bind_mobile">绑定手机号</string>
+
+
+    <string name="weibo">微博</string>
+    <string name="weixin">微信</string>
+    <string name="moments">朋友圈</string>
+    <string name="qq">QQ</string>
+    <string name="qq_zone">QQ空间</string>
+
+    <string name="parner_come_togethor">快来邀请你的小伙伴一起加入吧</string>
+    <string name="parner_title">邀请小伙伴</string>
+
+    <string name="share_rules">此处展示卖家设置的佣金，不同用户申请到的佣金不同，最终以实际结算结果为准</string>
+
+    <string name="save_money">省¥</string>
+    <string name="pre_commision">预估分享赚: ¥</string>
+    <string name="share">立即分享</string>
+    <string name="share_with_commision">分享赚¥</string>
+
+    <string name="str_phone">手机号</string>
+    <string name="str_smscode">验证码</string>
+
+    <string name="input_remain3">还可输入%1$d/300字</string>
+
+    <string name="fav_goods">赚实惠优选</string>
+    <string name="search_default">搜索</string>
+</resources>

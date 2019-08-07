@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:ignore="ContentDescription">
+
+    <include
+        android:id="@+id/id_register_include"
+        layout="@layout/vw_comm_title" />
+
+    <com.sina.shopguide.view.LoginTextEditView
+        android:id="@+id/id_reg_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_register_include"
+        app:letv_drawable="@drawable/ic_mobile_red"
+        app:letv_rightdrawable="@drawable/ic_delete_edit"
+        app:letv_tip="@string/login_mobile_tip"
+        app:letv_undrawable="@drawable/ic_mobile_gray" />
+
+    <com.sina.shopguide.view.LoginTextEditExView
+        android:id="@+id/id_reg_invate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_reg_mobile"
+        app:letv_drawable="@drawable/ic_invate_code_red"
+        app:letv_rightdrawable="@drawable/bg_text_stoke_red_corner"
+        app:letv_opcontent="@string/str_sms_copy"
+        app:letv_tip="@string/reg_invate_tip"
+        app:letv_undrawable="@drawable/ic_invate_code_gray" />
+
+    <com.sina.shopguide.view.LoginTextEditExView
+        android:id="@+id/id_reg_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_reg_invate"
+        app:letv_drawable="@drawable/ic_sms_code_red"
+        app:letv_opcontent="@string/bindalipay_smscode_get"
+        app:letv_rightdrawable="@drawable/bg_text_stoke_red_corner"
+        app:letv_tip="@string/reg_sms_tip"
+        app:letv_undrawable="@drawable/ic_sms_code_gray" />
+
+    <com.sina.shopguide.view.LoginTextEditView
+        android:id="@+id/id_reg_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_reg_sms"
+        app:letv_drawable="@drawable/ic_password_red"
+        app:letv_rightdrawable="@drawable/ic_hide_password"
+        app:letv_tip="@string/login_password_tip"
+        app:letv_undrawable="@drawable/ic_password_gray" />
+
+    <TextView
+        android:id="@+id/id_go_register"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_below="@+id/id_reg_password"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/bg_text_bigcorner_red"
+        android:gravity="center"
+        android:text="@string/str_register_now"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_go_register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/id_protcal_sel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="0"
+            android:src="@drawable/ic_aggrement_nosel" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/str_register_agree"
+            android:textColor="@color/colorTopPanelTip"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/id_protcal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/str_register_protcal"
+            android:textColor="@color/colorRedTitle"
+            android:textSize="12sp" />
+    </LinearLayout>
+</RelativeLayout>

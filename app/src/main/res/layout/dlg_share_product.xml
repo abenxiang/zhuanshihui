@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#63000000"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        >
+
+        <TextView
+            android:id="@+id/tv_rules_detail"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/share_rules"
+            android:textColor="#282428"
+            android:textSize="13sp"
+            android:lineSpacingExtra="4dp"
+            android:visibility="gone"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_reward_rules">
+
+            <TextView
+                android:id="@+id/tv_reward_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="35dp"
+                android:text="奖励佣金预估: ¥"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_expand_rules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tv_reward_key"
+                android:layout_alignParentRight="true"
+                android:drawablePadding="8.5dp"
+                android:drawableRight="@drawable/ic_close_rules"
+                android:text="规则"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                android:paddingRight="15dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_reward_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tv_reward_key"
+                android:layout_toLeftOf="@id/tv_expand_rules"
+                android:layout_toRightOf="@id/tv_reward_key"
+                android:text="6.66"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="59dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_centerVertical="true"
+                android:background="#D5D5D5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@color/colorWhite"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:text="去粘贴"
+                android:textColor="#A29FA0"
+                android:textSize="13sp"
+                />
+
+        </RelativeLayout>
+
+        <include layout="@layout/vw_share_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            />
+        
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="49.5dp"
+            android:background="#F4F4F4"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="#A29FA0"
+            android:text="@string/dlg_cancel"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorUiBackgroud"
+    android:orientation="vertical"
+    tools:ignore="ContentDescription">
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/vw_comm_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <com.sina.shopguide.view.HorizTextEditView
+            android:id="@+id/id_alibind_name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            app:dcontent="@string/bindalipay_name"
+            app:dtip="@string/bindalipay_name_tip" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorLine" />
+
+        <com.sina.shopguide.view.HorizTextEditView
+            android:id="@+id/id_alibind_account"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            app:dcontent="@string/bindalipay_aliacount"
+            app:dtip="@string/bindalipay_aliacount_tip" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorLine" />
+
+        <!--<com.sina.shopguide.view.HorizTextEditView
+            android:id="@+id/id_alibind_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            app:dcontent="@string/bindalipay_mobile"
+            app:dtip="@string/bindalipay_mobile_tip" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorLine" />
+
+        <com.sina.shopguide.view.HorizTextEditExView
+            android:id="@+id/id_alibind_valide"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            app:dcontent="@string/bindalipay_smscode"
+            app:dtip="@string/bindalipay_smscode_tip" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorLine" /> -->
+
+        <TextView
+            android:id="@+id/id_gobind"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_below="@+id/id_invate_title"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/bg_text_bigcorner_red"
+            android:gravity="center"
+            android:text="@string/bind_go"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

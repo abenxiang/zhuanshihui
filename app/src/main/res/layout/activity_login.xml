@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:ignore="ContentDescription">
+
+    <ImageView
+        android:id="@+id/id_login_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="31dp"
+        android:layout_marginTop="31dp"
+        android:src="@drawable/ic_register_close" />
+
+    <ImageView
+        android:id="@+id/id_login_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_login_close"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_register_logo" />
+
+    <com.sina.shopguide.view.LoginTextEditView
+        android:id="@+id/id_login_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_login_logo"
+        android:layout_marginTop="30dp"
+        app:letv_drawable="@drawable/ic_mobile_red"
+        app:letv_rightdrawable="@drawable/ic_delete_edit"
+        app:letv_tip="@string/login_mobile_tip"
+        app:letv_undrawable="@drawable/ic_mobile_gray" />
+
+    <com.sina.shopguide.view.LoginTextEditView
+        android:id="@+id/id_login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_login_mobile"
+        app:letv_drawable="@drawable/ic_password_red"
+        app:letv_rightdrawable="@drawable/ic_hide_password"
+        app:letv_tip="@string/login_password_tip"
+        app:letv_undrawable="@drawable/ic_password_gray" />
+
+    <TextView
+        android:id="@+id/id_login"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_below="@+id/id_login_password"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/bg_text_bigcorner_enable"
+        android:gravity="center"
+        android:text="@string/str_login"
+        android:textColor="@color/colorLine"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/id_regiter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/id_login"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="@string/str_register"
+        android:textColor="@color/colorTopPanelTip"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/id_forgetpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/id_login"
+        android:layout_marginRight="42dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="@string/str_forgetpassword"
+        android:textColor="@color/colorTopPanelTip"
+        android:textSize="13sp" />
+</RelativeLayout>

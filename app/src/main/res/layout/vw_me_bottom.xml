@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorUiBackgroud">
+
+    <com.sina.shopguide.view.TopPanelView
+        android:id="@+id/id_fresh_guide"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:content="@string/toppanel_freshguide"
+        app:image="@drawable/ic_guideforfresh" />
+
+    <com.sina.shopguide.view.TopPanelView
+        android:id="@+id/id_comm_problen"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="1px"
+        app:content="@string/toppanel_commproblen"
+        app:image="@drawable/ic_comm_problem" />
+
+    <com.sina.shopguide.view.TopPanelView
+        android:id="@+id/id_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="1px"
+        app:content="@string/toppanel_feedback"
+        app:image="@drawable/ic_feedback" />
+
+    <com.sina.shopguide.view.TopPanelView
+        android:id="@+id/id_aboutus"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="1px"
+        app:content="@string/toppanel_aboutus"
+        app:image="@drawable/ic_aboutus" />
+</LinearLayout>

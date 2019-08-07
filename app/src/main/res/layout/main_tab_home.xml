@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.ActionBar.TabView" >
+
+    <ImageView
+        style="@style/MainTabImageView"
+        android:src="@drawable/tab_home"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@android:id/title"
+        style="@style/MainTabTextView" >
+    </TextView>
+
+</FrameLayout>

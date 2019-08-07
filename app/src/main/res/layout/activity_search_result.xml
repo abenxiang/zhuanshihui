@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/vw_comm_title" />
+
+    <FrameLayout
+        android:id="@+id/area_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/include1" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshGridView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/lv_product"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/colorWhite"
+            android:divider="@null"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:horizontalSpacing="0dp"
+            android:listSelector="@color/colorWhite"
+            android:numColumns="2"
+            ptr:ptrAnimationStyle="custom"
+            ptr:ptrMode="both" />
+
+        <ImageView
+            android:id="@+id/back_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="52dp"
+            android:layout_marginRight="11dp"
+            android:visibility="gone"
+            android:src="@drawable/ic_go_top" />
+
+        <LinearLayout
+            android:id="@+id/comment_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+            <ImageView
+                android:id="@+id/emp_img"
+                android:layout_width="149dp"
+                android:layout_height="125dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="82dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_product_search_empty" />
+
+            <TextView
+                android:id="@+id/emp_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="没有内容"
+                android:textColor="#6f727b"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

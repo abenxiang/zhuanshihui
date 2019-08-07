@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <RelativeLayout
+        android:id="@+id/rl_banner_root"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <com.sina.shopguide.view.BannerViewPager
+            android:id="@+id/banner_pager"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation" />
+
+        <LinearLayout
+            android:id="@+id/ll_select_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignBottom="@+id/banner_pager"
+            android:layout_marginBottom="9dp"
+            android:orientation="horizontal" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp">
+
+        <RelativeLayout
+            android:id="@+id/ry_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_home_search"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/iv_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_market_search" />
+
+                    <TextView
+                        android:id="@+id/tv_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/search_default"
+                        android:textColor="#8e8e8e"
+                        android:textSize="14sp" />
+                </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>
+

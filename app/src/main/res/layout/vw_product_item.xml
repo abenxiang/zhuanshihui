@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="249.3dp"
+    android:paddingBottom="22.5dp"
+    android:background="@color/colorWhite"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="157.5dp">
+
+        <com.sina.shopguide.view.SelectableRoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_pic"
+            android:layout_width="match_parent"
+            android:layout_height="157.5dp"
+            android:scaleType="centerCrop"
+            app:sriv_left_top_corner_radius="5dp"
+            app:sriv_right_top_corner_radius="5dp"
+            app:sriv_left_bottom_corner_radius="5dp"
+            app:sriv_right_bottom_corner_radius="5dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            />
+
+        <TextView
+            android:id="@+id/tv_commision"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:layout_alignParentBottom="true"
+            android:text="@string/pre_commision"
+            android:textSize="12sp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:gravity="center"
+            android:background="@drawable/bg_commison"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="38dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="9dp">
+        <TextView
+            android:id="@+id/tv_taobao_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:textColor="#A29FA0"
+            android:maxLines="1"
+            android:text="@string/taobao_price"
+            />
+        <TextView
+            android:id="@+id/tv_sales_p_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:textSize="12sp"
+            android:textColor="#A29FA0"
+            android:maxLines="1"
+            android:text="@string/sales_p_month"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="9dp">
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textColor="#FD4A41"
+            android:maxLines="1"
+            android:text="￥39.9"
+            />
+        <TextView
+            android:id="@+id/tv_coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:textSize="11sp"
+            android:textColor="@color/colorWhite"
+            android:maxLines="1"
+            android:text="券 ￥50"
+            android:background="@drawable/bg_coupon"
+            android:gravity="center"
+            android:paddingLeft="7.5dp"
+            android:paddingRight="7.5dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

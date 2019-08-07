@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <com.sina.shopguide.view.HomeBannerView
+        android:id="@+id/v_home_banner"
+        android:layout_width="fill_parent"
+        android:layout_height="220dp" />
+
+    <com.sina.shopguide.view.HomeSelectView
+        android:id="@+id/v_home_select"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        />
+
+    <com.sina.shopguide.view.HomeTopicView
+        android:id="@+id/v_home_topic"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        />
+
+    <include layout="@layout/vw_youxuan_title" />
+</LinearLayout>

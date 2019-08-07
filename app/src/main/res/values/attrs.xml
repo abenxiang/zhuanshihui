@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TopPanelView">
+        <attr name="image" format="reference" />
+        <attr name="content" format="string|reference" />
+        <attr name="tip" format="string|reference" />
+        <attr name="isHideImage" format="boolean" />
+        <attr name="isHideArrow" format="boolean" />
+        <attr name="isHideTip" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="DoubleTextView">
+        <attr name="dcontent" format="string|reference" />
+        <attr name="dtip" format="string|reference" />
+        <attr name="dcontentsize" format="dimension|reference" />
+        <attr name="dcontentcolor" format="color|reference" />
+        <attr name="dtipsize" format="dimension|reference" />
+        <attr name="dtipcolor" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ImageTextView">
+        <attr name="iimage" format="reference" />
+        <attr name="iimage_enable" format="reference" />
+        <attr name="icontent" format="string|reference" />
+        <attr name="icontentsize" format="dimension|reference" />
+        <attr name="icontentcolor" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <!-- {@deprecated Use civ_circlebackground_color instead.} -->
+        <attr name="civ_fill_color" format="color" />
+        <attr name="civ_circle_background_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="LoginEditTextView">
+        <attr name="letv_content" format="string|reference" />
+        <attr name="letv_tip" format="string|reference" />
+        <attr name="letv_drawable" format="reference" />
+        <attr name="letv_undrawable" format="reference" />
+        <attr name="letv_rightdrawable" format="reference" />
+        <attr name="letv_opcontent" format="string|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SelectableRoundedImageView">
+        <attr name="sriv_left_top_corner_radius" format="dimension" />
+        <attr name="sriv_right_top_corner_radius" format="dimension" />
+        <attr name="sriv_left_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_right_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_border_width" format="dimension" />
+        <attr name="sriv_border_color" format="color" />
+        <attr name="sriv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+</resources>

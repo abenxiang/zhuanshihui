@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4C000000">
+
+    <FrameLayout
+        android:layout_centerInParent="true"
+        android:layout_width="265dp"
+        android:layout_height="372dp">
+
+        <RelativeLayout
+            android:layout_width="265dp"
+            android:layout_height="225dp"
+            android:layout_marginTop="38dp"
+            android:background="@drawable/bg_dlg">
+
+            <TextView
+                android:id="@+id/id_dlg_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="56dp"
+                android:textColor="@color/colorTopPanelText"
+                android:text="11"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/id_horiz_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/id_dlg_name"
+                android:layout_marginTop="24dp"
+                android:background="@color/colorLine" />
+
+            <TextView
+                android:id="@+id/id_dlg_weixin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/id_horiz_line"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="18dp"
+                android:gravity="center"
+                android:text="微信:"
+                android:textColor="@color/colorTopPanelTip"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/id_dlg_weibo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/id_dlg_weixin"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="18dp"
+                android:gravity="center"
+                android:text="微博:"
+                android:textColor="@color/colorTopPanelTip"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/id_dlg_qq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/id_dlg_weibo"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="18dp"
+                android:gravity="center"
+                android:text="Q  Q:"
+                android:textColor="@color/colorTopPanelTip"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <com.sina.shopguide.view.CircleImageView
+            android:id="@+id/id_dlg_icon"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_popwin_tips" />
+
+        <ImageView
+            android:id="@+id/id_dlg_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="295.5dp"
+            android:src="@drawable/ic_dlg_close" />
+    </FrameLayout>
+</RelativeLayout>

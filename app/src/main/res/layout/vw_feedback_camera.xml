@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="72dp"
+    android:layout_height="72dp"
+    android:gravity="center"
+    tools:ignore="ContentDescription" >
+
+    <com.sina.shopguide.view.SelectableRoundedImageView
+        android:id="@+id/image_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:sriv_left_bottom_corner_radius="4dp"
+        app:sriv_left_top_corner_radius="4dp"
+        app:sriv_right_bottom_corner_radius="4dp"
+        app:sriv_right_top_corner_radius="4dp"
+        android:src="@drawable/ic_comment_photo"
+        />
+
+</FrameLayout>

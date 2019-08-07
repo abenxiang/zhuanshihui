@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4C000000">
+
+    <RelativeLayout
+        android:layout_width="265dp"
+        android:layout_height="181dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_dlg">
+
+        <ImageView
+            android:id="@+id/id_dlg_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:src="@drawable/ic_popwin_tips" />
+
+        <TextView
+            android:id="@+id/id_dlg_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_dlg_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:text="@string/dlg_bindcomfrim_tip"
+            android:textColor="@color/colorTopPanelText"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/id_horiz_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/id_dlg_tip"
+            android:layout_marginTop="13dp"
+            android:background="@color/colorLine" />
+
+        <TextView
+            android:id="@+id/id_dlg_cancel"
+            android:layout_width="132dp"
+            android:layout_height="44dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/id_horiz_line"
+            android:gravity="center"
+            android:text="@string/dlg_cancel"
+            android:textColor="#A29FA0"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/id_ver_line"
+            android:layout_width="1px"
+            android:layout_height="44dp"
+            android:layout_below="@+id/id_horiz_line"
+            android:layout_toRightOf="@id/id_dlg_cancel"
+            android:background="@color/colorLine" />
+
+        <TextView
+            android:id="@+id/id_dlg_comfirm"
+            android:layout_width="132dp"
+            android:layout_height="44dp"
+            android:layout_below="@+id/id_horiz_line"
+            android:layout_toRightOf="@id/id_ver_line"
+            android:gravity="center"
+            android:text="@string/dlg_comfirm"
+            android:textColor="#FD4A41"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

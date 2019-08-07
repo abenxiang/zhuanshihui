@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorUiBackgroud"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/vw_comm_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorWhite">
+
+                <com.sina.shopguide.view.CircleImageView
+                    android:id="@+id/id_avatar"
+                    android:layout_width="76dp"
+                    android:layout_height="76dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="17.5dp"
+                    android:src="@drawable/ic_default_avatar" />
+
+                <TextView
+                    android:id="@+id/id_changeAvatar"
+                    android:layout_width="113dp"
+                    android:layout_height="28dp"
+                    android:layout_below="@id/id_avatar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/bg_text_bigcorner_red"
+                    android:gravity="center"
+                    android:text="@string/me_modify_avatar"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp" />
+
+                <com.sina.shopguide.view.TopPanelTipView
+                    android:id="@+id/id_nick"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@id/id_changeAvatar"
+                    android:layout_marginTop="3dp"
+                    app:content="@string/toppaneltip_nick"
+                    app:tip="@string/toppaneltip_tip_modify" />
+
+            </RelativeLayout>
+
+            <com.sina.shopguide.view.TopPanelTipView
+                android:id="@+id/id_invate_code"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="1px"
+                app:content="@string/toppaneltip_invatecode"
+                app:tip="@string/toppaneltip_tip_invate" />
+
+            <com.sina.shopguide.view.TopPanelTipView
+                android:id="@+id/id_zhifubao"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="9.5dp"
+                app:content="@string/toppaneltip_zhifubao" />
+
+            <com.sina.shopguide.view.TopPanelTipView
+                android:id="@+id/id_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="1px"
+                app:content="@string/toppaneltip_mobile" />
+
+            <com.sina.shopguide.view.TopPanelTipView
+                android:id="@+id/id_weixin"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="1px"
+                app:content="@string/toppaneltip_weixin" />
+
+            <com.sina.shopguide.view.TopPanelTipView
+                android:id="@+id/id_weibo"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="1px"
+                app:content="@string/toppaneltip_weibo" />
+
+            <com.sina.shopguide.view.TopPanelTipView
+                android:id="@+id/id_qq"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="1px"
+                app:content="@string/toppaneltip_qq" />
+            <com.sina.shopguide.view.TopPanelTipView
+                android:id="@+id/id_pid"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="1px"
+                android:visibility="gone"
+                app:content="@string/toppaneltip_pid" />
+            <com.sina.shopguide.view.TopPanelTipView
+                android:id="@+id/id_setormodify"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="1px"
+                app:content="@string/toppaneltip_setorchange" />
+
+            <TextView
+                android:id="@+id/id_exit"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/colorWhite"
+                android:layout_marginTop="10dp"
+                android:textColor="#282428"
+                android:gravity="center"
+                android:text="@string/exit"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="home_grid_item_margin">15dp</dimen>
+    <dimen name="detail_divider_height">20dp</dimen>
+    <dimen name="banner_point_space">5dp</dimen>
+</resources>

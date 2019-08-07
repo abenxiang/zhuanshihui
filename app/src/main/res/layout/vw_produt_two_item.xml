@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <com.sina.shopguide.view.ProductItemView
+        android:id="@+id/v_left_product"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/home_grid_item_margin"
+        />
+
+    <com.sina.shopguide.view.ProductItemView
+        android:id="@+id/v_right_product"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/home_grid_item_margin"
+        android:layout_marginRight="@dimen/home_grid_item_margin"
+        />
+
+</LinearLayout>

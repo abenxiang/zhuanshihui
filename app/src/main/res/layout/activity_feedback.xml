@@ -1,0 +1,214 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorUiBackgroud"
+    android:orientation="vertical"
+    tools:ignore="RtlSymmetry">
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/vw_comm_title" />
+
+    <!--<ScrollView
+        android:layout_below="@+id/include1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">-->
+
+        <RelativeLayout
+            android:layout_below="@+id/include1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+            <TextView
+                android:id="@+id/annouce_comm_title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="10dp"
+                android:text="请选择反馈问题的类型"
+                android:textColor="#323232"
+                android:textSize="14sp" />
+            <RelativeLayout
+                android:id="@+id/type_rv"
+                android:layout_below="@+id/annouce_comm_title1"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorWhite"
+                android:layout_height="44dp">
+
+                <TextView
+                    android:id="@+id/exception_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="功能异常"
+                    android:textColor="#323232"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/exception_sel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:tag="1"
+                    android:src="@drawable/ic_supply_sel" />
+
+                <TextView
+                    android:id="@+id/exception_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/exception_title"
+                    android:text="不能使用现有功能"
+                    android:textColor="#6f727b"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/express_splite1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/type_rv"
+                android:background="#e6e6e6" />
+
+            <RelativeLayout
+                android:id="@+id/reason_rv"
+                android:layout_below="@+id/express_splite1"
+                android:layout_width="match_parent"
+                android:background="@color/colorWhite"
+                android:layout_height="44dp">
+
+
+                <TextView
+                    android:id="@+id/other_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="其他问题"
+                    android:textColor="#323232"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/other_sel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:tag="0"
+                    android:src="@drawable/ic_supply_nosel" />
+
+                <TextView
+                    android:id="@+id/other_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/other_title"
+                    android:text="用的不爽、功能建议都提过来吧"
+                    android:textColor="#6f727b"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/express_splite2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/reason_rv"
+                android:background="#e6e6e6" />
+
+            <TextView
+                android:id="@+id/annouce_content_title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/express_splite2"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="10dp"
+                android:text="问题和意见"
+                android:textColor="#323232"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/annouce_content"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_below="@+id/annouce_content_title1"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp"
+                android:background="@color/colorWhite"
+                android:gravity="left|top"
+                android:hint="请输入问题和意见"
+                android:textColor="#323232"
+                android:textColorHint="#b8b8b8"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/annouce_content_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/annouce_content"
+                android:textColor="#b1b1b1"
+                android:gravity="right"
+                android:textSize="14sp"
+                android:text="0/300"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:background="@color/colorWhite"
+                />
+
+            <View
+                android:id="@+id/express_splite3"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_below="@+id/annouce_content_count"
+                android:background="#e6e6e6" />
+
+            <TextView
+                android:id="@+id/express_splite4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/express_splite3"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="10dp"
+                android:text="添加图片（选填，提供问题截图）"
+                android:textColor="#323232"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/express_splite5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/express_splite4"
+                android:background="#e6e6e6" />
+
+            <com.sina.shopguide.view.FeedBackPicGridView
+                android:id="@+id/v_pics"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/express_splite5"
+                />
+
+            <TextView
+                android:id="@+id/drawback_commit"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_alignParentBottom="true"
+                android:background="#db2013"
+                android:gravity="center"
+                android:text="提交"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    <!-- </ScrollView>-->
+
+ </RelativeLayout>

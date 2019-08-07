@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <TextView
+        android:id="@+id/id_tag_lefticon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:text="@string/str_phone"
+        android:textColor="@color/colorTopPanelText"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/id_tag_righticon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="53dp"
+        android:layout_marginTop="32dp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/id_tag_content"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/id_tag_lefticon"
+        android:background="@drawable/bg_edit_bigcorner"
+        android:gravity="center_vertical|left"
+        android:lines="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/colorTopPanelText"
+        android:textColorHint="@color/colorTopPanelTip"
+        android:textSize="14sp" />
+</RelativeLayout>

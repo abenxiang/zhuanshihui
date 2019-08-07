@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:ignore="ContentDescription">
+
+    <include
+        android:id="@+id/id_register_include"
+        layout="@layout/vw_comm_title" />
+
+    <com.sina.shopguide.view.BindTextEditView
+        android:id="@+id/id_bind_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_register_include"
+        app:letv_rightdrawable="@drawable/ic_delete_edit"
+        android:layout_marginTop="20dp"
+        app:letv_tip="@string/login_mobile_tip"/>
+
+    <com.sina.shopguide.view.BindTextEditExView
+        android:id="@+id/id_bind_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_bind_mobile"
+        android:layout_marginTop="20dp"
+        app:letv_opcontent="@string/bindalipay_smscode_get"
+        app:letv_rightdrawable="@drawable/bg_text_stoke_red_corner"
+        app:letv_tip="@string/reg_sms_tip" />
+
+    <TextView
+        android:id="@+id/id_go_bind"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_below="@+id/id_bind_sms"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bg_text_bigcorner_red"
+        android:gravity="center"
+        android:text="@string/bind_go"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp" />
+</RelativeLayout>

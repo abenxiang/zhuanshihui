@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.sina.shopguide.view.MeHeaderView
+            android:id="@+id/id_me_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.sina.shopguide.view.MeCenterView
+            android:id="@+id/id_me_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+        <com.sina.shopguide.view.MeBottomView
+            android:id="@+id/id_me_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+</ScrollView>

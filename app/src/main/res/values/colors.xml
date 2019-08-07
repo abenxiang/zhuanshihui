@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="text_color_tab_red">#DB1814</color>
+    <color name="text_color_tab_gray">#333333</color>
+
+
+    <color name="colorUiBackgroud">#F4F4F4</color>
+    <color name="colorTopPanelText">#282428</color>
+    <color name="colorTopPanelTip">#A29FA0</color>
+
+    <color name="colorWhite">#fffffe</color>
+    <color name="colorTitle">#fffffe</color>
+    <color name="colorRedTitle">#FD714E</color>
+    <color name="colorLine">#D5D5D5</color>
+
+    <color name="bg_gray">#F4F4F4</color>
+</resources>

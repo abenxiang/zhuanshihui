@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    >
+
+    <LinearLayout
+        android:id="@+id/ly_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        >
+
+        <LinearLayout
+            android:id="@+id/ly_share"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/bg_detail_share"
+            >
+            <TextView
+                android:id="@+id/tv_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#282428"
+                android:text="立即分享"
+                android:drawableLeft="@drawable/ic_detail_share"
+                android:drawablePadding="10dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_buy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bg_detail_buy"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/tv_buy_with_coupon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#FFD612"
+                android:text="省￥89.9"
+                android:drawableLeft="@drawable/ic_detail_buy"
+                android:drawablePadding="3dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/colorWhite"
+                android:text="领券购买"
+                android:layout_marginLeft="11dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/plv_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ly_toolbar"
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        ptr:ptrAnimationStyle="custom"
+        ptr:ptrMode="pullFromStart"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:listSelector="@color/colorWhite"
+        android:cacheColorHint="@color/colorWhite"
+        />
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_marginTop="27.5dp"
+        android:layout_marginLeft="15dp"
+        />
+</RelativeLayout>

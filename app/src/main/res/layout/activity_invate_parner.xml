@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorUiBackgroud"
+    android:orientation="vertical"
+    tools:ignore="ContentDescription">
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/vw_comm_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/id_aboutus_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="37dp"
+                android:layout_marginRight="37dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/ic_guide" />
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/id_invate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="邀请码："
+                    android:textColor="#282428"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/id_invate_copy"
+                    android:layout_width="54dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/bg_text_stoke_red_corner"
+                    android:gravity="center"
+                    android:text="@string/str_copy"
+                    android:textColor="@color/colorRedTitle"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:layout_marginTop="20dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/id_togethor"
+                    android:background="@color/colorLine" />
+
+                <TextView
+                    android:id="@+id/id_togethor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/parner_come_togethor"
+                    android:textColor="#A29FA0"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/id_togethor"
+                    android:background="@color/colorLine" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_weibo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="11.5dp"
+                    android:drawableTop="@drawable/ic_share_weibo"
+                    android:gravity="center_horizontal"
+                    android:text="@string/weibo"
+                    android:textColor="#A29FA0"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_weixin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="11.5dp"
+                    android:drawableTop="@drawable/ic_share_weixin"
+                    android:gravity="center_horizontal"
+                    android:text="@string/weixin"
+                    android:textColor="#A29FA0"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_moments"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="11.5dp"
+                    android:drawableTop="@drawable/ic_share_moments"
+                    android:gravity="center_horizontal"
+                    android:text="@string/moments"
+                    android:textColor="#A29FA0"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_qq"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="11.5dp"
+                    android:drawableTop="@drawable/ic_share_qq"
+                    android:gravity="center_horizontal"
+                    android:text="@string/qq"
+                    android:textColor="#A29FA0"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_qq_zone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="11.5dp"
+                    android:drawableTop="@drawable/ic_share_qq_zone"
+                    android:gravity="center_horizontal"
+                    android:text="@string/qq_zone"
+                    android:textColor="#A29FA0"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <TextView
+        android:id="@+id/id_tag_lefticon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/colorTopPanelText"
+        android:text="@string/str_smscode"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/id_tag_righticon"
+        android:layout_width="93dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:background="@drawable/bg_text_stoke_red_corner"
+        android:text="@string/bindalipay_smscode_get"
+        android:textColor="@color/colorRedTitle"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/id_tag_content"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/id_tag_righticon"
+        android:layout_toRightOf="@+id/id_tag_lefticon"
+        android:background="@drawable/bg_edit_bigcorner"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:lines="1"
+        android:textColor="@color/colorTopPanelText"
+        android:textColorHint="@color/colorTopPanelTip"
+        android:textSize="14sp" />
+</RelativeLayout>

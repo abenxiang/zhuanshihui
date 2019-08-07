@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorUiBackgroud"
+    android:orientation="vertical"
+    tools:ignore="ContentDescription">
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/vw_red_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorUiBackgroud"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_gradient_nologin_me">
+
+                <TextView
+                    android:id="@+id/id_profit_lefttitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/profitmanager_leftmoney"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/id_profit_leftcontent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/id_profit_lefttitle"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="0.00"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="32sp" />
+
+                <ImageView
+                    android:id="@+id/id_profit_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/id_profit_lefttitle"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/ic_arrow" />
+
+                <TextView
+                    android:id="@+id/id_profit_withdraw_op"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/id_profit_lefttitle"
+                    android:layout_marginRight="9dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_toLeftOf="@+id/id_profit_arrow"
+                    android:text="@string/withdraw_title"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/id_profit_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/id_profit_leftcontent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="0.00"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_below="@id/id_profit_all"
+                    android:layout_marginTop="26dp">
+
+                    <com.sina.shopguide.view.VerDoubleTextView
+                        android:id="@+id/id_month_earn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:dcontent="@string/profitmanager_lastmonth"
+                        app:dcontentcolor="@color/colorWhite"
+                        app:dtipcolor="@color/colorWhite"
+                        app:dcontentsize="12px" />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="27dp"
+                        android:background="#D5D5D5" />
+
+                    <com.sina.shopguide.view.VerDoubleTextView
+                        android:id="@+id/id_today_earn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:dcontent="@string/profitmanager_currmonth"
+                        app:dcontentcolor="@color/colorWhite"
+                        app:dtipcolor="@color/colorWhite"
+                        app:dcontentsize="12px" />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="27dp"
+                        android:background="#D5D5D5" />
+
+                    <com.sina.shopguide.view.VerDoubleTextView
+                        android:id="@+id/id_mygroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:dcontentcolor="@color/colorWhite"
+                        app:dtipcolor="@color/colorWhite"
+                        app:dcontent="@string/profitmanager_lastproxy"
+                        app:dcontentsize="12px" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:background="@color/colorWhite"
+                android:text="@string/profitmanager_today"
+                android:textColor="@color/colorTopPanelText"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorLine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/colorWhite"
+                android:layout_height="60dp">
+
+                <com.sina.shopguide.view.VerDoubleTextView
+                    android:id="@+id/id_today_paycount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:dcontent="@string/profitmanager_paycount"
+                    app:dtipcolor="#FD4A41" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="27dp"
+                    android:background="#D5D5D5" />
+
+                <com.sina.shopguide.view.VerDoubleTextView
+                    android:id="@+id/id_today_income"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:dcontent="@string/profitmanager_mayincome"
+                    app:dtipcolor="#FD4A41" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="27dp"
+                    android:background="#D5D5D5" />
+
+                <com.sina.shopguide.view.VerDoubleTextView
+                    android:id="@+id/id_today_proxy"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:dcontent="@string/profitmanager_proxyincome"
+                    app:dtipcolor="#FD4A41" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorWhite"
+                android:paddingLeft="15dp"
+                android:text="@string/profitmanager_yesterday"
+                android:textColor="@color/colorTopPanelText"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorLine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/colorWhite"
+                android:layout_height="60dp">
+
+                <com.sina.shopguide.view.VerDoubleTextView
+                    android:id="@+id/id_yesterday_paycount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:dcontent="@string/profitmanager_paycount"
+                    app:dtipcolor="#FD4A41" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="27dp"
+                    android:background="#D5D5D5" />
+
+                <com.sina.shopguide.view.VerDoubleTextView
+                    android:id="@+id/id_yesterday_income"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:dcontent="@string/profitmanager_mayincome"
+                    app:dtipcolor="#FD4A41" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="27dp"
+                    android:background="#D5D5D5" />
+
+                <com.sina.shopguide.view.VerDoubleTextView
+                    android:id="@+id/id_yesterday_proxy"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:dcontent="@string/profitmanager_proxyincome"
+                    app:dtipcolor="#FD4A41" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:background="@color/colorWhite"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="15dp"
+                android:text="@string/profitmanager_senvenday"
+                android:textColor="@color/colorTopPanelText"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorLine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/colorWhite"
+                android:layout_height="68dp">
+
+                <com.sina.shopguide.view.VerDoubleTextView
+                    android:id="@+id/id_senvenday_paycount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:dcontent="@string/profitmanager_paycount"
+                    app:dtip="100"
+                    app:dtipcolor="#FD4A41" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="27dp"
+                    android:background="#D5D5D5" />
+
+                <com.sina.shopguide.view.VerDoubleTextView
+                    android:id="@+id/id_senvenday_income"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:dcontent="@string/profitmanager_mayincome"
+                    app:dtipcolor="#FD4A41" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="27dp"
+                    android:background="#D5D5D5" />
+
+                <com.sina.shopguide.view.VerDoubleTextView
+                    android:id="@+id/id_senvenday_proxy"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:dcontent="@string/profitmanager_proxyincome"
+                    app:dtipcolor="#FD4A41" />
+            </LinearLayout>
+
+            <com.sina.shopguide.view.TopPanelTipView
+                android:id="@+id/id_withdraw_detail"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                app:content="@string/profitmanager_detail" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorLine" />
+
+            <com.sina.shopguide.view.TopPanelTipView
+                android:id="@+id/id_withdraw_history"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                app:content="@string/profitmanager_history" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
